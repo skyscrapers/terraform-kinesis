@@ -11,7 +11,7 @@ variable "environment" {
 }
 
 variable "tags" {
-  description = "(Optional, Default: []) List of map of additional tags"
+  description = "List of map of additional tags"
   type        = "list"
   default     = []
 }
