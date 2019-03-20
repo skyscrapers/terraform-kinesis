@@ -16,12 +16,16 @@ variable "tags" {
   default     = []
 }
 
-variable "kinesis_chard_count" {
-  default = 1
+variable "kinesis_shard_count" {
+  description = "Number of shards to deploy in the stream"
+  default     = 1
 }
 
 variable "kinesis_retention_period" {
-  default = 24
+  description = "Retention period for the data in the kinesis stream"
+  default     = 24
 }
 
-variable "sns_topic_arn" {}
+variable "sns_topic_arn" {
+  description = "SNS topic to push the alerts of the monitoring to"
+}
