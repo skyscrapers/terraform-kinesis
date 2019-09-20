@@ -7,8 +7,8 @@ Terraform module to setup an AWS Kinesis stream, add Cloudwatch alerts and push 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | environment | Environment to deploy on | string | n/a | yes |
-| kinesis\_retention\_period | Retention period for the data in the kinesis stream | string | `"24"` | no |
-| kinesis\_shard\_count | Number of shards to deploy in the stream | string | `"1"` | no |
+| kinesis\_retention\_period | Retention period for the data in the kinesis stream | number | `24` | no |
+| kinesis\_shard\_count | Number of shards to deploy in the stream | number | `1` | no |
 | name | Name of the stack | string | n/a | yes |
 | project | Project name to use | string | n/a | yes |
 | sns\_topic\_arn | SNS topic to push the alerts of the monitoring to | string | n/a | yes |
